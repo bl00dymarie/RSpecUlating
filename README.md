@@ -1,6 +1,6 @@
 # RSpec keywords
 
-## The describe Keyword
+## The `describe` Keyword
 
 The word describe is an RSpec keyword. It is used to define an “Example Group”.
 You can think of an “Example Group” as a collection of tests.
@@ -9,7 +9,7 @@ You also need to pass a block argument to describe, this will contain the indivi
 or as they are known in RSpec, the “Examples”.
 The block is just a Ruby block designated by the Ruby do/end keywords.
 
-## The context Keyword
+## The `context` Keyword
 
 The context keyword is similar to describe. It too can accept a class name and/or string argument.
 You should use a block with context as well. The idea of context is that it encloses tests of a certain type.
@@ -23,7 +23,7 @@ context “When testing corner cases with the say_maybe_hello() method”
 
 The context keyword is not mandatory, but it helps to add more details about the examples that it contains.
 
-## The it Keyword
+## The `it` Keyword
 
 The word it is another RSpec keyword which is used to define an “Example”.
 An example is basically a test or a test case.
@@ -43,7 +43,7 @@ The string makes it clear what should happen when we call `say_maybe_hello` on a
 This part of the RSpec philosophy, an Example is not just a test, it’s also a specification (a spec).
 In other words, an Example both documents and tests the expected behavior of your Ruby code.
 
-## The expect Keyword
+## The `expect` Keyword
 The expect keyword is used to define an “Expectation” in RSpec.
 This is a verification step where we check, that a specific expected condition has been met.
 
@@ -55,12 +55,12 @@ The idea with expect statements is that they read like normal English.
 You can say this aloud as “Expect the variable message to equal the string ‘Hello?’”.
 The idea is that its descriptive and also easy to read, even for non-technical stakeholders such as project managers.
 
-## The to keyword
+## The `to` keyword
 The to keyword is used as part of expect statements. Note that you can also use the not_to keyword to express the opposite, when you want the Expectation to be false.
 You can see that to is used with a dot, expect(message).to, because it actually just a regular
 method. In fact, all of the RSpec keywords are really just Ruby methods.
 
-## The eql keyword
+## The `eql` keyword
 The eql keyword is a special RSpec keyword called a Matcher.
 You use Matchers to specify what type of condition you are testing to be true (or false).
 
